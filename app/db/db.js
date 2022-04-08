@@ -6,9 +6,10 @@ import {
   user_name,
   password,
   host,
+  connection_string
 } from "../config/index.js"
 
-export default new Sequelize(db_name, user_name, password, {
+export default new Sequelize(connection_string, {
   dialect: dialect,
   host: host,
   port: db_port,

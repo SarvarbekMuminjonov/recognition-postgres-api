@@ -6,7 +6,8 @@ const db_name = process.env.db_name,
   dialect = process.env.dialect,
   host = process.env.host,
   db_port = process.env.db_port,
-  port =process.env.port
+  port =process.env.port,
+  connection_string = process.env.connection_string
 
 export  {
   db_name,
@@ -15,5 +16,6 @@ export  {
   dialect,
   host,
   db_port,
-  port
+  port,
+  connection_string
 }
