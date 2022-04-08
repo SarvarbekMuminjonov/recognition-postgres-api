@@ -8,4 +8,4 @@ import { port } from "./config/index.js"
 app.use(bodypareser.json())
 app.use("/", router)
 
-app.listen(port, () => console.log(`Application started on Port ${port}.`))
+app.listen(process.env.PORT || port, () => console.log(`Application started on Port ${port}.`))
